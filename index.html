@@ -1,0 +1,450 @@
+<html>
+<head>
+<style>
+            body{
+                background-color:rgb(243, 158, 168);
+                margin: 0;
+                padding: 0;
+                text-align: center;
+
+            }
+            .store{
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 10px;
+                justify-content: center;
+                background-color: pink;
+                text-align: center;
+                font-size: large;
+                gap: 10px;
+                margin-left: 70px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin-right: 70px;
+                padding: 0 60px 60px;
+                justify-items: center;
+                padding-bottom: 10px;
+
+            }
+            .stuff{
+                border-radius: 10px;
+                padding: 9px;
+                width: 180px;
+                text-align: center;   
+            }
+            .stuff img{
+                width:200;
+                height:200;
+                object-fit: cover;
+                border-radius: 10px;
+                
+            }
+            .stuff h2 {
+                    margin: 10px 0 5px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    }
+            .head{
+                text-decoration: solid;
+                text-align: center;
+                font-family:'Times New Roman', Times, serif;
+                font-weight: bold;
+                padding: 20;
+
+            }
+            .slo{
+                
+                color: #222;
+                font-size: 24px;
+                line-height: 1.6;
+                margin-top: 20px;
+                background-color: rgba(242, 193, 222, 0.8);
+                padding: 10px;
+                border-radius: 10px;
+                padding-top: 10px;
+                margin-left: 70px;
+                margin-right: 70px;
+                overflow: hidden;
+    
+            }
+            
+            .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #800040;
+      font-size: 30;
+      margin-top: 10;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-family: 'Playfair Display', serif;
+    }
+    .stuff:hover{
+        transform: scale(1.1);
+    }
+    .stuff {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      padding-top: 10px;
+      
+    }
+    .stuff img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .h2 {
+      padding: 10px;
+      font-weight: bold;
+      color: #800040;
+      font-family: 'Playfair Display', serif;
+    }
+    .tab{
+        text-align: center;
+        color: #800040;
+        justify-content:center;
+    }
+    .price{
+        padding: 10px;
+      font-weight: bold;
+      color: #800040;
+      font-family: 'Playfair Display', serif;
+      font-size: 30;
+    }
+    .food{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                justify-content: center;
+                background-color: rgb(226, 190, 196);
+                text-align: center;
+                font-size: large;
+                gap: 10px;
+                margin-left: 70px;
+                margin-right: 70px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                color: #800040;
+                padding: 0 60px 60px;
+                justify-items: center;
+                padding-bottom: 10px;
+
+            }
+            .menu{
+                text-decoration: solid;
+                text-align: center;
+                font-family:'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 28;
+                
+
+            }
+            
+            .app{
+                
+                width: 200px;
+                text-align: center; 
+                color: #222;
+                font-size: 24px;
+                line-height: 1.8;
+                margin-top: 20px;
+                background-color: rgba(202, 171, 190, 0.8);
+                padding: 10px;
+                border-radius: 10px;
+                padding-top: 10px;
+                margin-left: 50px;
+                margin-right: 50px  
+                
+            }
+            .app img{
+                width:200;
+                height:200;
+                object-fit: cover; 
+                border-radius: 10px; 
+            }
+            .app h2 {
+                    margin: 10px 0 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    }
+
+            .app h3 {
+                    font-size: 18px;
+                    margin: 0;
+                    text-align: center;
+                    }
+                .abt{
+                    text-align: left;
+                    font-size: 28;
+                    color: #111010;
+                }
+                .para{
+                    text-align: justify;
+                    font-size: 24
+                }
+                .end{
+                    color: #060606;
+                }
+                .details{
+                    color:black;
+                    text-align: left;
+                }
+                .details p{
+                    font-size: 20;
+                }
+                .link{
+                    text-align: left;
+                }
+                .footer{
+                grid-area: footer;
+                background-color: rgb(200, 139, 113);
+                padding: 10px;
+                text-align: center;
+                font-size: 25;
+            }
+    
+            
+            </style>
+</head>
+<body>
+    <div class="whole"></div>
+        <div class="top">
+                <h1 class="head">~✨🎀A TABLE FOR TWO🦋🫧~</h1>
+                <h2 class="slo"><p>Where The Hearts And Plates Connect🐝...<br>Where Love Meets Flavour🥳!<br>Welcome to A TABLE FOR TWO🤩, Savour The Moment Together🤗!</h2></p>
+                <img class="pic" src = "a table .jpg" width="500" height="400">
+        </div>
+            
+        <h2 class="menu">"📌OuR MeNu📒"</h2>
+        <div class="food">
+            <div class="app">
+                <img src="ap 1.jpeg">
+                <h2>Mozzarella Sticks🍢</h2>
+                <h3>Rs.40/-</h3>
+            </div>
+            <div class="app">
+                <img src="ap 2.jpeg">
+                <h2>Crab Salad🦀</h2>
+                <h3>Rs.60/-</h3>
+            </div>
+            <div class="app">
+                <img src="ap 3.jpeg">
+                <h2>Grilled Shrimp Skewers🍤</h2>
+                <h3>Rs.80/-</h3>
+            </div>
+
+            
+            <div class="app">
+                <img src="m1.jpeg">
+                <h2>Grilled Chicken🍗</h2>
+                <h3>Rs.200/-</h3>
+            </div>
+            <div class="app">
+                <img src="m2.jpeg">
+                <h2>Beaf Burger🍔</h2>
+                <h3>Rs.60/-</h3>
+            </div>
+            <div class="app">
+                <img src="m3.jpeg">
+                <h2>Fish🐟&Chips🍟</h2>
+                <h3>Rs.30/-</h3>
+            </div>
+
+            <div class="app">
+                <img src="d1.jpeg">
+                <h2>Cheese Cake🧀</h2>
+                <h3>Rs.40/-</h3>
+            </div>
+            <div class="app">
+                <img src="d2.jpeg">
+                <h2>Chocolate Mouse🍫</h2>
+                <h3>Rs.35/-</h3>
+            </div>
+            <div class="app">
+                <img src="d3.jpeg">
+                <h2>Creme Brulee🍮</h2>
+                <h3>Rs.30/-</h3>
+            </div>
+        </div>
+    </div>
+        
+            <div class="section">
+                <h2 >🧀Starters To Share</h2>
+                    <div class="store">
+                        <div class="stuff">
+                            <img src="blush.jpg">
+                                <h2>Blush Bites</h2>
+                        </div>
+                          
+                    <div class="stuff">
+                            <img src="whispering wheels.jpg">
+                                <h2>Whispering Wheels</h2>
+                        </div>
+                    <div class="stuff">
+                            <img src="hearts on fire.jpg">
+                                <h2>Hearts On Fire</h2>
+                        </div>
+                    <div class="stuff">
+                            <img src="velvet dip.jpg">
+                                <h2>Velvet Dip</h2>
+                        </div>
+                    </div>
+                </div>
+            <div class="section">
+             <h2 >🍝Main Course Duos</h2>
+             <div class="store">
+            
+            <div class="stuff">
+                <img src="lover.jpg">
+                <h2>Lovers' Twirl</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="moon.jpg">
+                <h2>Moonlight Surf & Turf</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="rosewood.jpg">
+                <h2>Passion Plate</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="rose 2.jpg">
+                <h2>Rosewood Risotto</h2>
+                
+            </div>
+            </div></div>
+            <div class="section">
+            <h2 >🍰Sweet Endings</h2>
+            <div class="store">
+            <div class="stuff">
+                
+                <img src="molten.jpg">
+                <h2>Molten Heart</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="kiss.jpg">
+                <h2>Kiss Of Berries</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="tiramisu.jpg">
+                <h2>Tiramisu For 2</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="love on.jpg">
+                <h2>Love On Spoon</h2>
+                
+            </div>
+            </div></div>
+            <div class="section">
+            <h2 >🍸Love In Glass</h2>
+            <div class="store">
+            <div class="stuff">
+                
+                <img src="blush and.jpg">
+                <h2>Blush & Bubbles</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="eternal.jpg">
+                <h2>Eternal Flame</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="sweet.jpg">
+                <h2>Sweetheart Sparkle</h2>
+                
+            </div>
+            <div class="stuff">
+                <img src="red.jpg">
+                <h2>Red Velvet Fizz</h2>
+                
+            </div>
+            
+            </div></div>
+            
+          
+            <h2 class="price">Price List📝</h2>
+            <center>
+            <table class="tab" border="3" width="1200px">
+            
+                <tr>
+                    <th style="font-size: 24px;">Dish Name</th>
+                    <th style="font-size: 24px;">Description</th>
+                    <th style="font-size: 24px;">Price</th>
+                </tr>
+                <tr>
+                    <td style="font-size: 24px;">Grilled Chicken 🍗</td>
+                    <td style="font-size: 24px;">Marinated chicken breast, lettuce, tomato, and mayo on whole wheat bread!!</td>
+                    <td style="font-size: 24px;">💸340</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 24px;">Eggs Benedict 🍳</td>
+                    <td style="font-size: 24px;">Poached eggs on toasted English muffins with smoked salmon and hollandaise sauce!! </td>
+                    <td style="font-size: 24px;">💸112</td>             
+                </tr>
+                <tr>
+                    <td style="font-size: 24px;">Cheesecake 🍰</td>
+                    <td style="font-size: 24px;">Creamy cheesecake with a graham cracker crust and mixed berry compote!!</td>
+                    <td style="font-size: 24px;">💸95</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 24px;">Fresh Fruit Tart 🥗</td>
+                    <td style="font-size: 24px;">Mixed berries, melon, and citrus atop a buttery pastry crust!!</td>
+                    <td style="font-size: 24px;">💸82</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 24px;">Chocolate Lava Cake 🥮</td>
+                    <td style="font-size: 24px;">Warm chocolate cake, vanilla ice cream, and caramel sauce!!</td>
+                    <td style="font-size: 24px;">💸90</td>
+                </tr>
+            </center>
+            </table>
+            <h2 class="abt">About Us</h2>
+            <p class="para">
+                At A Table For Two, we believe that love is best shared over unforgettable meals. Nestled in the heart of the city, our restaurant is a celebration of romance, connection, and fine dining — created especially for couples looking to savor meaningful moments.
+
+Whether it's a first date, anniversary, or spontaneous night out, every table at our restaurant is thoughtfully set to make you feel like you're the only two in the room. Candlelit ambiance, soft music, curated dishes, and an intimate atmosphere set the tone for heartfelt conversations and shared laughter.
+
+Our menu is crafted with passion — featuring a blend of timeless classics and contemporary creations, all designed to be enjoyed together. From our signature "Blush Bites" to the indulgent "Molten Heart", each dish tells a story, plated to perfection.
+            </p>
+            <h2 class="end">"Savor the flavor🤤!<br>Follow us for mouth-watering dishes✔, behind-the-scenes kitchen peeks📈, and exclusive promotions🤗! <br>#Foodie😍 <br>#RestaurantLife🍜<br>#FoodLove❤‍🩹<br>#InstaFood🍔</h2>
+            <div class="details">
+                <h2>📞 Contact Us</h2>
+
+                    <p>A Table For Two<br>
+                    Where love meets the plate.<br></p>
+
+                <h2>📍 Address:</h2>
+                    <p>12 Rosewood Lane,<br>
+                    Valentine’s District,<br>
+                    Chennai, Tamil Nadu – 600014<br></p>
+
+                <h2>📧 Email:</h2>
+                    <p>reservations@atablefortwo.com<br></p>
+
+                <h2>📱 Phone:<br></h2>
+                    <p>+91 98765 43210<br></p>
+
+                <h2>🕰 Opening Hours:<br></h2>
+                    <p>Mon – Sun: 6:00 PM – 11:00 PM<br>
+                    (Couples-only dinner service)<br></p>
+
+                </div>
+
+            </div>
+            <h2 class="link"><a href="https://www.instagram.com/foodies_findings/">~A TABLE FOR TWO~</a></h2>
+</div>
+<footer class="footer">
+            &copy; 2025 Web Design Lab. All rights Reserved!
+        </footer>
+</body>
+</html>
