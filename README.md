@@ -1,1 +1,1 @@
-Demo link : https://github.com/Anu-priya12389/restaurant.git
+Demo link : https://anu-priya12389.github.io/restaurant/
